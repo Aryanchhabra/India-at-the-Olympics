@@ -17,7 +17,7 @@ ENV/
 
 # Streamlit
 .streamlit/secrets.toml
-.streamlit/config.toml
+.streamlit/local_storage.json
 
 # IDEs
 .vscode/
