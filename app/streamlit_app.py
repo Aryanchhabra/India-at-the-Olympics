@@ -57,13 +57,18 @@ st.markdown("""
 @st.cache_data
 def load_data():
     """Load all processed data files"""
+    import os
+    
+    # Get the directory where this script is located
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    
     try:
-        india_df = pd.read_csv('india_olympics_data.csv')
-        yearly_data = pd.read_csv('yearly_aggregated_data.csv')
-        top_athletes = pd.read_csv('top_athletes.csv')
+        india_df = pd.read_csv(os.path.join(script_dir, 'india_olympics_data.csv'))
+        yearly_data = pd.read_csv(os.path.join(script_dir, 'yearly_aggregated_data.csv'))
+        top_athletes = pd.read_csv(os.path.join(script_dir, 'top_athletes.csv'))
         
         # Load sports_medals and ensure it's a Series
-        sports_medals_df = pd.read_csv('sports_medals.csv', index_col=0)
+        sports_medals_df = pd.read_csv(os.path.join(script_dir, 'sports_medals.csv'), index_col=0)
         if isinstance(sports_medals_df, pd.DataFrame):
             # If it's a DataFrame, get the first column as a Series
             sports_medals = sports_medals_df.iloc[:, 0]
@@ -78,11 +83,16 @@ def load_data():
 @st.cache_resource
 def load_models():
     """Load trained ML models and metadata"""
+    import os
+    
+    # Get the directory where this script is located
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    
     try:
-        lr_model = joblib.load('lr_model.pkl')
-        rf_model = joblib.load('rf_model.pkl')
-        scaler = joblib.load('scaler.pkl')
-        metadata = joblib.load('model_metadata.pkl')
+        lr_model = joblib.load(os.path.join(script_dir, 'lr_model.pkl'))
+        rf_model = joblib.load(os.path.join(script_dir, 'rf_model.pkl'))
+        scaler = joblib.load(os.path.join(script_dir, 'scaler.pkl'))
+        metadata = joblib.load(os.path.join(script_dir, 'model_metadata.pkl'))
         return lr_model, rf_model, scaler, metadata
     except FileNotFoundError as e:
         st.error(f"Model file not found: {e}. Please run the Jupyter notebook first to train and save the models.")
