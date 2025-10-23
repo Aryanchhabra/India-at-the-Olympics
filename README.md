@@ -2,11 +2,11 @@
 
 An interactive data science dashboard analyzing India's Summer Olympics performance (1948-2016) with machine learning predictions.
 
-[![Live Dashboard](https://img.shields.io/badge/Streamlit-Live%20Dashboard-FF4B4B?style=for-the-badge&logo=streamlit)](https://olympic-india-medals.streamlit.app)
+[![Live Dashboard](https://img.shields.io/badge/Streamlit-Live%20Dashboard-FF4B4B?style=for-the-badge&logo=streamlit)](https://india-at-the-olympics.streamlit.app)
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-> **[🚀 View Live Dashboard](https://olympic-india-medals.streamlit.app)** | **[📊 Explore the Data](data/)** | **[📓 View Analysis](notebooks/)**
+> **[🚀 View Live Dashboard](https://india-at-the-olympics.streamlit.app)** | **[📊 Explore the Data](data/)** | **[📓 View Analysis](notebooks/)**
 
 ---
 
@@ -23,22 +23,14 @@ This project analyzes India's **23 unique medals** from 18 Summer Olympics (1948
 
 ---
 
-## 📸 Dashboard Preview
-
-![Dashboard](https://raw.githubusercontent.com/Aryanchhabra/Olympic/main/preview.png)
-
-*Interactive Streamlit dashboard with 4 tabs: Historical Performance, EDA Insights, Medal Prediction, and Data Explorer*
-
----
-
 ## 🚀 Quick Start
 
 ### Run Locally
 
 ```bash
 # Clone the repository
-git clone https://github.com/Aryanchhabra/Olympic.git
-cd Olympic
+git clone https://github.com/Aryanchhabra/India-at-the-Olympics.git
+cd India-at-the-Olympics
 
 # Install dependencies
 pip install -r requirements.txt
@@ -53,7 +45,7 @@ streamlit run streamlit_app.py
 ```
 
 ### View Online
-**[🌐 Live Dashboard →](https://olympic-india-medals.streamlit.app)**
+**[🌐 Live Dashboard →](https://india-at-the-olympics.streamlit.app)**
 
 ---
 
@@ -161,7 +153,7 @@ Olympic/
 3. Connect GitHub repository
 4. Deploy from `app/streamlit_app.py`
 
-**Live at:** [olympic-india-medals.streamlit.app](https://olympic-india-medals.streamlit.app)
+**Live at:** [india-at-the-olympics.streamlit.app](https://india-at-the-olympics.streamlit.app)
 
 ### Local Development
 
@@ -192,7 +184,7 @@ MIT License - feel free to use this project for learning and portfolio purposes.
 
 **Aryan Chhabra**
 - GitHub: [@Aryanchhabra](https://github.com/Aryanchhabra)
-- Project: [Olympic Medal Predictor](https://github.com/Aryanchhabra/Olympic)
+- Project: [India at the Olympics](https://github.com/Aryanchhabra/India-at-the-Olympics)
 
 ---
 
